@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Get In</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="fixed-div">
+        <div class="moving-div" id="moving-div">
+          <div class="sign-up-div" id="sign-up-div">
+            <h2>SIGN UP</h2>
+            <input class="inp" type="text" id="name" placeholder="Full Name" />
+            <input class="inp" type="email" id="mail" placeholder="Email" />
+            <input
+              class="inp"
+              type="password"
+              id="password"
+              placeholder="Password"
+            />
+            <button class="sign-up-submit" type="submit">SIGN UP</button>
+          </div>
+          <div class="log-in-div" id="log-in-div">
+            <h2>LOG IN</h2>
+            <input class="inp" type="email" id="mail" placeholder="Email" />
+            <input
+              class="inp"
+              type="password"
+              id="password"
+              placeholder="Password"
+            />
+            <button class="log-in-submit" type="submit">LOG IN</button>
+          </div>
+        </div>
+        <div class="caption" id="cap1">
+          <h1>Have an account?</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            rerum necessitatibus dolores.
+          </p>
+          <button class="log-in" onclick="animation1()">LOG IN</button>
+        </div>
+        <div class="caption" id="cap2">
+          <h1>Don't have an account?</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            rerum necessitatibus dolores.
+          </p>
+          <button class="log-in" onclick="animation2()">SIGN UP</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+</html>

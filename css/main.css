@@ -1,0 +1,107 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../img/catbg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "segoe ui";
+}
+h2 {
+  font-weight: 500;
+}
+.container {
+  margin-top: 15%;
+}
+.container .fixed-div {
+  position: relative;
+  background-color: #333;
+  opacity: 0.5;
+  width: 70%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+}
+.container .fixed-div .moving-div {
+  position: absolute;
+  background-color: #fbfbfa;
+  height: 500px;
+  width: 50%;
+  top: -50px;
+  padding: 50px;
+}
+.container .fixed-div .moving-div .inp {
+  width: 90%;
+  height: 50px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  border: 1px solid #333;
+  border-style: none none solid none;
+}
+input:focus {
+  outline: none;
+  border: 5px solid #333;
+}
+button {
+  padding: 10px 35px;
+  border-radius: 5px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+.sign-up-submit,.log-in-submit {
+  color: #fbfbfa;
+  background-color: #000;
+  margin: 20px 50px;
+  float: right;
+}
+.sign-up-submit:hover,.log-in-submit:hover {
+  color: #fbfbfb;
+  background-color: #333;
+}
+.caption {
+  position: absolute;
+  width: 30%;
+  top: 10%;
+  color: #fbfbfa;
+}
+#cap1{
+left: 60%;
+}
+#cap2{
+left: 50px;
+display: none;
+}
+.log-in-div{
+  display: none;
+}
+h1 {
+  font-weight: 500;
+}
+p{
+  margin-bottom: 50px;
+}
+.log-in{
+  color: #fbfbfa;
+  background-color: inherit;
+  border: 3px solid #fbfbfa;
+}
+.log-in:hover{
+  color: #000;
+  background-color: #fbfbfa;
+}
+.movement1{
+  animation: move 1s ease;
+}
+@keyframes move {
+  from {
+    left:50px;
+  }
+  to{
+    left: 45%;
+  }
+}
